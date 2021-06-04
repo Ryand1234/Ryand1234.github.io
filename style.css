@@ -1,0 +1,86 @@
+.navbar {
+    position: absolute;
+    width: 1263px;
+    height: 102px;
+    left: 0px;
+    top: 1px;
+
+    background: linear-gradient(73.57deg, #FF3021 35.05%, rgba(255, 255, 255, 0) 59.13%), #0AFF05;
+}
+
+.main {
+    position: absolute;
+    width: 1263px;
+    height: 1351px;
+    left: 0px;
+    top: 103px;
+
+    background: linear-gradient(147.55deg, #F23A3A 19.18%, rgba(255, 255, 255, 0) 80.56%), #FEFD03;
+}
+
+.skills {
+    position: relative;
+    width: 150px;
+    height: 32px;
+    left: 949px;
+    top: 40px;
+
+    font-family: Public Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+.projects {
+    position: absolute;
+    width: 182px;
+    height: 46px;
+    left: 1081px;
+    top: 32px;
+
+    font-family: Public Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.line-1 {
+    position: absolute;
+    width: 1140px;
+    height: 0px;
+    left: 62px;
+    top: 894px;
+
+    border: 1px solid #000000;
+}
+
+.line-2 {
+    position: absolute;
+    width: 1140px;
+    height: 0px;
+    left: 62px;
+    top: 1189px;
+
+    border: 1px solid #000000;
+}
+
+.line-0 {
+    position: absolute;
+    width: 1140px;
+    height: 0px;
+    left: 62px;
+    top: 435px;
+
+    border: 1px solid #000000;
+}
