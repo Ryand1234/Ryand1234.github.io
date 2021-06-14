@@ -1,11 +1,11 @@
 html-content:
-  - index.html
+- index.html
 
 css:
-  - style.css
+- style.css
 
 images:
-  - images/*
+- images/*
 
 js:
-  - script.js
+- script.js
