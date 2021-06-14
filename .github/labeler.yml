@@ -1,5 +1,3 @@
-core:
-  - ./*
 html-content:
   - index.html
 
