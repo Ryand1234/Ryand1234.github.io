@@ -1,15 +1,8 @@
-.navbar {
-    position: absolute;
-    width: 1263px;
-    height: 102px;
-    left: 0px;
-    top: 1px;
-
+#navbar {
     background: linear-gradient(73.57deg, #FF3021 35.05%, rgba(255, 255, 255, 0) 59.13%), #0AFF05;
 }
 
 .main {
-    position: absolute;
     width: 1263px;
     height: 1351px;
     left: 0px;
@@ -19,7 +12,6 @@
 }
 
 .skills {
-    position: relative;
     width: 150px;
     height: 32px;
     left: 949px;
@@ -38,7 +30,6 @@
 }
 
 .projects {
-    position: absolute;
     width: 182px;
     height: 46px;
     left: 1081px;
@@ -56,7 +47,6 @@
 }
 
 .line-1 {
-    position: absolute;
     width: 1140px;
     height: 0px;
     left: 62px;
@@ -66,7 +56,6 @@
 }
 
 .line-2 {
-    position: absolute;
     width: 1140px;
     height: 0px;
     left: 62px;
@@ -76,11 +65,63 @@
 }
 
 .line-0 {
-    position: absolute;
     width: 1140px;
     height: 0px;
     left: 62px;
     top: 435px;
 
     border: 1px solid #000000;
+}
+
+@media screen and (min-width: 500px){
+    .main {
+        height: 1351px;
+    }
+    .contact {
+        width: 244px;
+        height: 30px;
+        left: 600px;
+        top: 1231px;
+        
+        font-family: PT Serif;
+        font-size: 36px;
+        line-height: 48px;
+        display: flex;
+         
+    }
+}
+
+.contact {
+    width: 105px;
+    height: 40px;
+    left: 154px;
+    top: 792px;
+
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #0438FF;
+}
+
+.project {
+    width: 458px;
+    height: 17px;
+    left: 600px;
+    top: 926px;
+
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+
+    color: #012BFF;
 }

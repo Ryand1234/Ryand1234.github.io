@@ -3,16 +3,43 @@
     <head>
         <title>Riyan Dhiman</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     </head>
     <body>
-        <div class="navbar">
-            <div class="skills">Skills</div>
-            <div class="projects">Projects</div>
-        </div>
+        <nav id="navbar" class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                </a>
+            
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                </a>
+            </div>
+            
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Skills</strong>
+                        </a>
+                        <a class="button is-light">
+                            Projects
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="main">
             <div class="line-0"></div>
             <div class="line-1"></div>
+            <div class="project">Projects and Skills</div>
             <div class="line-2"></div>
+            <div class="contact">Contact Me</div>
         </div>
     </body>
 </html>
