@@ -1,0 +1,13 @@
+core:
+  - ./*
+html-content:
+  - index.html
+
+css:
+  - style.css
+
+images:
+  - images/*
+
+js:
+  - script.js
