@@ -12,7 +12,7 @@
     font-size: 28px;
     line-height: 33px;
 
-    color: rgb(0, 225, 255);
+    color: Black;
 }
 
 #heading {
@@ -51,4 +51,12 @@
     align-items: center;
 
     color: Black;
+}
+
+.card {
+    height: 500px;
+}
+
+.card:hover {
+    transform: scale3d(1.1, 1.1, 5);
 }
