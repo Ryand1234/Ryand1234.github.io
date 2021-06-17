@@ -3,7 +3,7 @@
 }
 
 #main {
-    background: black;
+    background: linear-gradient(147.55deg, #F23A3A 19.18%, rgba(255, 255, 255, 0) 80.56%), #FEFD03;;
 }
 
 
@@ -12,18 +12,18 @@
     font-size: 28px;
     line-height: 33px;
 
-    color: rgb(5, 189, 189);
+    color: rgb(0, 225, 255);
 }
 
 #heading {
     font-family: PT Serif;
     font-size: 36px;
     line-height: 48px;
-    color: #2344ff;
+    color: #0026ff;
 }
 
 #line {
-    border: 1px solid #FFFFFF;
+    border: 1px solid #000000;
     height: 0px;
     left: 162px;
     background: black;
@@ -44,4 +44,11 @@
     align-items: center;
 
     color: rgba(255, 255, 255, 0.747);
+}
+
+#about {
+    font-family: PT Serif Caption;
+    align-items: center;
+
+    color: Black;
 }
