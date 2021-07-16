@@ -54,7 +54,12 @@
 }
 
 .card {
-    height: 500px;
+    height: 550px;
+}
+
+.links {
+    text-decoration: none;
+    color: grey;
 }
 
 .card:hover {
