@@ -123,7 +123,7 @@
             <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
             </a>
         
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+            <a role="button" onclick="toggle()" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -403,22 +403,9 @@
             </h2>
         </section>
     </div>
+    <script src="script.js"></script>
     <script>
-      var slideIndex = 0;
-        showSlides();
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            for(i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if(slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 4000); // Change image every 2 seconds
-        }
+      showSlides()
     </script>
   </body>
 </html>
