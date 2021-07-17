@@ -54,12 +54,14 @@
 }
 
 .card {
-    height: 550px;
+    height: 480px;
+    font-size: 13px;
 }
 
 .links {
     text-decoration: none;
     color: grey;
+    font-size: 15px;
 }
 
 .card:hover {
