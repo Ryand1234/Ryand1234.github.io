@@ -1,423 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Riyan Dhiman</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyan Dhiman - Full Stack Web Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <style>
-        * {
-          box-sizing: border-box
-        }
-        body {
-          font-family: Verdana, sans-serif;
-          margin: 0
-        }
-        .mySlides {
-          display: none
-        }
-        img {
-          vertical-align: middle;
-        }
-        .slideshow-container {
-          max-width: 1000px;
-          position: relative;
-          margin: auto;
-        }
-        /* Next & previous buttons */
-        .prev,
-        .next {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 16px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        /* Position the "next button" to the right */
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-          background-color: rgba(0, 0, 0, 0.8);
-        }
-        /* Caption text */
-        .text {
-          color: #ffffff;
-          font-size: 15px;
-          padding: 8px 12px;
-          position: absolute;
-          bottom: 8px;
-          width: 100%;
-          text-align: center;
-        }
-        /* Number text (1/3 etc) */
-        .numbertext {
-          color: #ffffff;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
-        /* The dots/bullets/indicators */
-        .dot {
-          cursor: pointer;
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #999999;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        }
-        .active,
-        .dot:hover {
-          background-color: #111111;
-        }
-        /* Fading animation */
-        .fade {
-          -webkit-animation-name: fade;
-          -webkit-animation-duration: 1.5s;
-          animation-name: fade;
-          animation-duration: 1.5s;
-        }
-        @-webkit-keyframes fade {
-          from {
-            opacity: .4
-          }
-          to {
-            opacity: 1
-          }
-        }
-        @keyframes fade {
-          from {
-            opacity: .4
-          }
-          to {
-            opacity: 1
-          }
-        }
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-          .prev,
-          .next,
-          .text {
-            font-size: 11px
-          }
-        }
-      </style>
-  </head>
-  <body>
-    <nav id="navbar" class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-            <a class="navbar-item" href="https://ryand1234.github.io/">
-            <img src="./images/logo.jpg">
-            </a>
-        
-            <a role="button" onclick="toggle()" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            </a>
-        </div>
-        
-        <div id="navbarMenu" class="navbar-menu">
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary" href="./skill.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="https://ryand1234.github.io/">
+                        <img src="./images/logo.jpg" alt="Logo">
+                    </a>
+                    <a role="button" onclick="toggle()" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="./skill.html">
                             <strong>Skills</strong>
                         </a>
-                        <a class="button is-light" href="./project.html">
+                        <a class="navbar-item" href="./project.html">
                             Projects
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <div class="container is-fluid" id="main">
-        <br>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
+        </nav>
+    </header>
+
+    <main>
+        <div class="container is-fluid" id="main">
+            <section class="hero is-primary is-bold">
+                <!-- Slideshow here -->
+                <div class="mySlides fade">
+                  <figure class="image is-3by1">
+                      <img src="./images/projects/ide.png">
+                  </figure>
+                  <div class="text">Online Ide</div>
+              </div>
+              <div class="mySlides fade">
+                  <figure class="image is-3by1">
+                      <img src="./images/projects/chat_app.png">
+                  </figure>
+                  <div class="text mt-1">Chat App</div>
+              </div>
+              <div class="mySlides fade">
+                  <figure class="image is-3by1">
+                      <img src="./images/projects/discussion_forum.png">
+                  </figure>
+                  <div class="text">Discussion Forum</div>
+              </div>
+              <div class="mySlides fade">
                 <figure class="image is-3by1">
-                    <img src="./images/projects/ide.png">
+                    <img src="./images/projects/kanban_board.png">
                 </figure>
-                <div class="text">Online Ide</div>
+                <div class="text">Kanban Board</div>
             </div>
-            <div class="mySlides fade">
-                <figure class="image is-3by1">
-                    <img src="./images/projects/chat_app.png">
-                </figure>
-                <div class="text mt-1">Chat App</div>
-            </div>
-            <div class="mySlides fade">
-                <figure class="image is-3by1">
-                    <img src="./images/projects/discussion_forum.png">
-                </figure>
-                <div class="text">Discussion Forum</div>
-            </div>
-            <div class="mySlides fade">
-              <figure class="image is-3by1">
-                  <img src="./images/projects/kanban_board.png">
-              </figure>
-              <div class="text">Kanban Board</div>
           </div>
-        </div>
-        <br>
-        <div>
-            <figure class="image has-text-right">
-                <a class="button is-primary is-rounded is-small" href="https://github.com/Ryand1234?tab=repositories" target="_blank">More Projects</a>
-            </figure>
-        </div>
-        <hr id="line">
-        <div class="rows mt-3">
-            <div class="row">
-                <div class="columns">
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-image">
-                              <figure class="image is-2by1">
-                                <img src="./images/projects/discussion_forum.png" alt="Placeholder image">
-                              </figure>
-                            </div>
-                            <div class="card-content">
-                              <div class="media">
-                                <div class="media-content">
-                                  <p class="title is-4">Discussion Forum</p>
-                                  <span><a href="https://discuss-forum.herokuapp.com/"  target="_blank" class="links">(Deployment)</a> / <a href="https://github.com/Ryand1234/Discussion-forum" target="_blank" class="links">(Repo)</a></span>
-                                </div>
-                              </div>
-                          
-                              <div class="content">
-                                <p>Features: </p>
-                                <ul>
-                                  <li>
-                                    A Discussion Forum Web App build using the MEAN stack.
-                                  </li>
-                                  <li>
-                                    The App allows Authorization, View Profile, Create View Thread, Like Dislike a thread.
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-image">
-                              <figure class="image is-2by1">
-                                <img src="./images/projects/ide.png" alt="Placeholder image">
-                              </figure>
-                            </div>
-                            <div class="card-content">
-                              <div class="media">
-                                <div class="media-content">
-                                  <p class="title is-4">Online Ide</p>
-                                  <span><a href="https://floating-oasis-63694.herokuapp.com/"  target="_blank" class="links">(Deployment)</a> / <a href="https://github.com/Ryand1234/Online-Ide" target="_blank" class="links">(Repo)</a></span>
-                                </div>
-                              </div>
-                              <div class="content">
-                                <p>Features: </p>
-                                <ul>
-                                  <li>
-                                    An Online Ide made on NodeJs using Python.
-                                  </li>
-                                  <li>
-                                    It currently supportes 4 languages Python, C, C++, Ruby.
-                                  </li>
-                                  <li>
-                                    It uses bash as backend to run code.
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-image">
-                              <figure class="image is-2by1">
-                                <img src="./images/projects/chat_cli.png" alt="Placeholder image">
-                              </figure>
-                            </div>
-                            <div class="card-content">
-                              <div class="media">
-                                
-                                <div class="media-content">
-                                  <p class="title is-4">Chat CLI</p>
-                                  <span><a href="https://github.com/Ryand1234/Chat-CLI" target="_blank" class="links">(Repo)</a></span>
-                                </div>
-                              </div>
-                          
-                              <div class="content">
-                                <p>Features: </p>
-                                <ul>
-                                  <li>
-                                    A Command-Line Encrypted Chat CLI build on NodeJS using Sockets.
-                                  </li>
-                                  <li>
-                                    A user can send messages to all connected users or specific one.
-                                  </li>
-                                  <li>
-                                    A user can also execute commands on other connected users.
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>                
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="columns">
-                    <div class="column">
-                      <div class="card">
-                          <div class="card-image">
-                            <figure class="image is-2by1">
-                              <img src="./images/projects/chat_app.png" alt="Placeholder image">
-                            </figure>
-                          </div>
-                          <div class="card-content">
-                            <div class="media">
-                              <div class="media-content">
-                                <p class="title is-4">Chat App</p>
-                                <span><a href="https://chating1-app.herokuapp.com/"  target="_blank" class="links">(Deployment)</a> / <a href="https://github.com/Ryand1234/Chat-App" target="_blank" class="links">(Repo)</a></span>
-                              </div>
-                            </div>
-                        
-                            <div class="content">
-                              <p>Features: </p>
-                              <ul>
-                                <li>
-                                  A Chat App built using the MEAN stack.
-                                </li>
-                                <li>
-                                  The App allows Authorization, Join Room, Personal Chat.
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                <!-- ... -->
+            </section>
+
+            <section class="section">
+                <!-- Project Cards here -->
+                <!-- ... -->
+            </section>
+
+            <section class="section">
+                <!-- Contact Me section here -->
+                <section class="section">
+                  <div class="container">
+                      <h1 class="title is-3">Contact Me</h1>
+                      <p>If you have any questions or would like to discuss how my skills and experience can help you, feel free to reach out to me.</p>
+                      
+                      <div class="social-icons">
+                          <a href="https://www.linkedin.com/in/riyan-dhiman-9a9297170" target="_blank" class="icon is-large">
+                              <i class="fab fa-linkedin"></i>
+                          </a>
+                          <a href="https://github.com/Ryand1234" target="_blank" class="icon is-large">
+                              <i class="fab fa-github"></i>
+                          </a>
+                          <a href="mailto:riyandhiman14@gmail.com" target="_blank" class="icon is-large">
+                              <i class="fas fa-envelope"></i>
+                          </a>
+                      </div>
+              
+                      <div class="resume-button">
+                          <a class="button is-rounded is-small" href="https://docs.google.com/document/d/1ErUxdb-L-n7hI70VsqAeS_36WSe1leEzj0vlsCcXuE8/edit?usp=sharing" target="_blank">Resume</a>
+                      </div>
                   </div>
-                  <div class="column">
-                      <div class="card">
-                          <div class="card-image">
-                            <figure class="image is-2by1">
-                              <img src="./images/projects/contest_remainder.jpg" alt="Placeholder image">
-                            </figure>
-                          </div>
-                          <div class="card-content">
-                            <div class="media">
-                              <div class="media-content">
-                                <p class="title is-4">Contest Remainder</p>
-                                <span><a href="https://github.com/Ryand1234/contest_remainder" target="_blank" class="links">(Repo)</a></span>
-                              </div>
-                            </div>
-                        
-                            <div class="content">
-                              <p>Feature: </p>
-                              <ul>
-                                <li>
-                                  It is a service which uses codeforeces API and codechef page to get future contests;
-                                </li>
-                                <li>
-                                  NodeMailer is used to send emails to the registered emails.
-                                </li>
-                                <li>
-                                  Email send regularly and data scarps regularly.
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-image">
-                              <figure class="image is-2by1">
-                                <img src="./images/projects/kanban_board.png" alt="Placeholder image">
-                              </figure>
-                            </div>
-                            <div class="card-content">
-                              <div class="media">
-                                <div class="media-content">
-                                  <p class="title is-4">Kanban Board</p>
-                                  <span><a href="https://kanban-board-new.herokuapp.com/"  target="_blank" class="links">(Deployment)</a> / <a href="https://github.com/Ryand1234/kanban-board" target="_blank" class="links">(Repo)</a></span>
-                                </div>
-                              </div>
-                          
-                              <div class="content">
-                                <p>Features: </p>
-                                <ul>
-                                  <li>
-                                    A MEAN stack kanban board app.
-                                  </li>
-                                  <li>
-                                    It has interactive and colorfull enriched UI.
-                                  </li>
-                                  <li>
-                                    It allows user to add task and change their status as the task gets completed.
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>         
-                    </div>
-                </div>
-            </div>
-        <hr id="line">
-        <section class="section has-text-centered">
-            <h1 id="heading">Contact Me</h1>
-            <h2 class="subtitle" id="about">
-                Are you not finding the answers to your questions here? Are you interested in finding out more about how my skills and experience can help you? 
-                Drop me a line, and I will get back to you soon!
-                <div class="columns mt-2">
-                    <div class="column is-offset-3">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-32x32">
-                                    <a href="https://www.linkedin.com/in/riyan-dhiman-9a9297170" target="_blank"><img src="./images/linkedin.jpg" alt="Placeholder image"></a>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-32x32">
-                                  <a href="https://github.com/Ryand1234" target="_blank"><img src="./images/github.jpg" alt="Placeholder image"></a>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-32x32">
-                                    <a href="mailto:riyandhiman14@gmail.com" target="_blank"><img src="./images/mail.jpg" alt="Placeholder image"></a>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="button is-rounded" href="https://docs.google.com/document/d/1ErUxdb-L-n7hI70VsqAeS_36WSe1leEzj0vlsCcXuE8/edit?usp=sharing" target="_blank">Resume</a>
-            </h2>
-        </section>
-    </div>
+              </section>
+              
+                <!-- ... -->
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2023 Riyan Dhiman</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
     <script>
-      showSlides()
+        // Your existing script here
+        showSlides();
     </script>
-  </body>
+</body>
 </html>
