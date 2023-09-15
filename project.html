@@ -3,116 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riyan Dhiman - Full Stack Web Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Your Website - Work Section</title>
+    <!-- Include Bootstrap CSS (you can link to a CDN or download it) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include your custom CSS if needed -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav id="navbar" class="navbar" role="navigation" aria-label="main navigation">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="https://ryand1234.github.io/">
-                        <img src="./images/logo.jpg" alt="Logo">
-                    </a>
-                    <a role="button" onclick="toggle()" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
+    <section id="work" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Work</h2>
+            <div class="row">
+                <!-- Job 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="job1-image.jpg" class="card-img-top" alt="Job 1 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Title 1</h5>
+                            <p class="card-text">Description of Job 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-                <div id="navbarMenu" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a class="navbar-item" href="./skill.html">
-                            <strong>Skills</strong>
-                        </a>
-                        <a class="navbar-item" href="./project.html">
-                            Projects
-                        </a>
+
+                <!-- Job 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="job2-image.jpg" class="card-img-top" alt="Job 2 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Title 2</h5>
+                            <p class="card-text">Description of Job 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="job3-image.jpg" class="card-img-top" alt="Job 3 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Title 3</h5>
+                            <p class="card-text">Description of Job 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-
-    <main>
-        <div class="container is-fluid" id="main">
-            <section class="hero is-primary is-bold">
-                <!-- Slideshow here -->
-                <div class="mySlides fade">
-                  <figure class="image is-3by1">
-                      <img src="./images/projects/ide.png">
-                  </figure>
-                  <div class="text">Online Ide</div>
-              </div>
-              <div class="mySlides fade">
-                  <figure class="image is-3by1">
-                      <img src="./images/projects/chat_app.png">
-                  </figure>
-                  <div class="text mt-1">Chat App</div>
-              </div>
-              <div class="mySlides fade">
-                  <figure class="image is-3by1">
-                      <img src="./images/projects/discussion_forum.png">
-                  </figure>
-                  <div class="text">Discussion Forum</div>
-              </div>
-              <div class="mySlides fade">
-                <figure class="image is-3by1">
-                    <img src="./images/projects/kanban_board.png">
-                </figure>
-                <div class="text">Kanban Board</div>
-            </div>
-          </div>
-                <!-- ... -->
-            </section>
-
-            <section class="section">
-                <!-- Project Cards here -->
-                <!-- ... -->
-            </section>
-
-            <section class="section">
-                <!-- Contact Me section here -->
-                <section class="section">
-                  <div class="container">
-                      <h1 class="title is-3">Contact Me</h1>
-                      <p>If you have any questions or would like to discuss how my skills and experience can help you, feel free to reach out to me.</p>
-                      
-                      <div class="social-icons">
-                          <a href="https://www.linkedin.com/in/riyan-dhiman-9a9297170" target="_blank" class="icon is-large">
-                              <i class="fab fa-linkedin"></i>
-                          </a>
-                          <a href="https://github.com/Ryand1234" target="_blank" class="icon is-large">
-                              <i class="fab fa-github"></i>
-                          </a>
-                          <a href="mailto:riyandhiman14@gmail.com" target="_blank" class="icon is-large">
-                              <i class="fas fa-envelope"></i>
-                          </a>
-                      </div>
-              
-                      <div class="resume-button">
-                          <a class="button is-rounded is-small" href="https://docs.google.com/document/d/1ErUxdb-L-n7hI70VsqAeS_36WSe1leEzj0vlsCcXuE8/edit?usp=sharing" target="_blank">Resume</a>
-                      </div>
-                  </div>
-              </section>
-              
-                <!-- ... -->
-            </section>
         </div>
-    </main>
+    </section>
 
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>&copy; 2023 Riyan Dhiman</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
-        // Your existing script here
-        showSlides();
-    </script>
+    <!-- Include Bootstrap JS (you can link to a CDN or download it) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
